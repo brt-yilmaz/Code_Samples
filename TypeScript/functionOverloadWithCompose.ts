@@ -29,7 +29,6 @@ const addOne = (num: number) => num + 1
 
 const numToString = (num: number) => num.toString()
 
-
 const stringToNumber = (str: string) => parseInt(str)
 
 // change the order of the functions and see the result
@@ -45,7 +44,6 @@ const composeWith4Args = compose(
   numToString,
   stringToNumber,
   numToString
-
 )
 
 
