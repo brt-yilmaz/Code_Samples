@@ -12,4 +12,6 @@
 `git rm --cached <file>` to force Git to completely forget the file.  
 `git rm -r --cached <folder>`  to force Git to completely forget the folder.  
 
+`git push origin --delete <branchName>` to delete remote branch
+
 
