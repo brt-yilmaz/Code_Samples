@@ -2,6 +2,6 @@
 
 /* this is hard to make with grid, the is the one best use case for the flex*/
 div {
-    display: flex;
-    flex-wrap: wrap; /* this will push first all avaible element to the next line, after that shrink the big one*/
+  display: flex;
+  flex-wrap: wrap; /* this will push first all available element to the next line, after that shrink the big one*/
 }

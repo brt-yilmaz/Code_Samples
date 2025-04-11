@@ -1,0 +1,49 @@
+<style>
+  .wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  h1:focus {
+    outline: 2px solid blue;
+    background: #eef;
+  }
+
+  main {
+    flex: 1;
+  }
+
+  aside {
+    min-width: 200px;
+  }
+</style>
+
+<div class="wrapper">
+  <aside>
+    <nav>
+      <h2>Table of Contents</h2>
+      <ul>
+        <li><a href="#heading-one">Heading One</a></li>
+        <li ><a tabindex="-1" href="#heading-two">Skipped Tab</a></li>
+        <li><a href="#heading-three">Heading Three</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- with tabindex you can change order but it has maintainability issues -->
+  <!-- negative tabindex is useful if we want to remove tab functionality from element. -->
+  <main>
+    <section id="heading-one">
+      <h1 tabindex="2">Heading One</h1>
+      <p>Content for heading one...</p>
+    </section>
+    <section id="heading-two">
+      <h1 tabindex="-1">Skipped Two</h1>
+      <p>Content for heading two...</p>
+    </section>
+    <section id="heading-three">
+      <h1 tabindex="3">Heading Three</h1>
+      <p>Content for heading three...</p>
+    </section>
+  </main>
+</div>

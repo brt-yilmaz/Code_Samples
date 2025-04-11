@@ -3,14 +3,17 @@
 }
 
 /* Add some padding to the li and a tag to not make all area clickable*/
- li {
+li {
   padding: 4px;
- }
+}
 
- a {
+a {
   padding: 4px;
- }
- /*******/
-
-
- 
+}
+/*******/
+/* Add tabindex property to html element like h2 etc to make them focusable in the which order we want*/
+/* example:  generally not to use it bc of maintainability, except negative tabindex values */
+/* <h2 tabindex="3">Heading</h2> */
+/* <h3 tabindex="1">Subheading</h3> */
+/* <h4 tabindex="2">Subsubheading</h4> */
+/* <h4 tabindex="-1">Subsubheading</h4> negative index removes the tab functionality from element. */
