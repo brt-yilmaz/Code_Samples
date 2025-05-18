@@ -78,10 +78,6 @@ abstract class CondimentDecorator extends Beverage {
     return this.beverage.getSize();
   }
 
-  setSize(size: Size): void {
-    this.beverage.setSize(size);
-  }
-
   abstract getDescription(): string;
 }
 

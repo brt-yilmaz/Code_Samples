@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pointer Media Query with CSS Variables</title>
+    <style>
+      /* Set the variable only for devices with coarse pointers (e.g., touchscreens) */
+      @media (pointer: coarse) {
+        html {
+          --min-tap-height: 44px;
+        }
+      }
+
+      /* Global button and input styles */
+      button,
+      input {
+        font-size: 16px;
+        padding: 0.5rem 1rem;
+        min-height: var(--min-tap-height, 44px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tap Target Demo</h1>
+
+    <button>Click Me</button>
+    <br /><br />
+    <input type="text" placeholder="Type here" />
+
+    <p>
+      On devices with a coarse pointer (like touchscreens), the tap target
+      height will increase to improve accessibility.
+    </p>
+  </body>
+</html>
