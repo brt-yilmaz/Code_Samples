@@ -35,4 +35,6 @@ WHERE
     posts.id IS NULL; 
                       -- Since LEFT JOIN returns NULL for non-matching rows, 
                       -- only the users WITHOUT posts.
----------------------- 
+
+---------------------  Right Join
+---------------------- Just use left join, no ninja code, no show off
